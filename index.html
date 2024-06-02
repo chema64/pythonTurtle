@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.12.3/brython.min.js" integrity="sha512-WfPt+wIQThYHepI1wjxSUvIn3innyL4xLN767LE7C46poe2HHvSbxD0l8bPjS1xsCFUwmmYJyeU+IZZ6A9v4LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.12.3/brython_stdlib.js" integrity="sha512-0/y02w+WgPT0ht51LLJORxOr9a/gZE72xhXeC1yXgxeGORBZexl2qil3T15Ka5ptkd0eo2ef7KckroO2/Px6aA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script type="text/javascript">
+        window.addEventListener('load', function() {
+            brython({
+                pythonpath: ['./Lib']  // Specify the path to your local standard library
+            });
+        });
+    </script> -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body onload="brython()">
+   
+    <canvas id="my_canvas" ></canvas>
+    <script type="text/python">
+         from turtle_graphics import draw_circle
+         draw_circle(30, 0, 1) 
+    </script>
+    <div id="output"></div> 
+    <script src="script.js"></script>
+</body>
+</html>
